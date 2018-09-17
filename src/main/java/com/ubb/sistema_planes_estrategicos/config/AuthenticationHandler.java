@@ -36,28 +36,16 @@ public class AuthenticationHandler implements AuthenticationSuccessHandler {
 
     protected String determineTargetUrl(Authentication authentication) {
         boolean isAdmin = false;
-        boolean isMechanic = false;
-        boolean isExecutive = false;
         Collection<? extends GrantedAuthority> authorities = authentication.getAuthorities();
         for (GrantedAuthority grantedAuthority : authorities) {
             if (grantedAuthority.getAuthority().equals("ROLE_ADMIN")) {
                 isAdmin = true;
-                break;
-            } else if (grantedAuthority.getAuthority().equals("ROLE_MECH")) {
-                isMechanic = true;
-                break;
-            } else if (grantedAuthority.getAuthority().equals("ROLE_EJEC")) {
-                isExecutive = true;
                 break;
             }
         }
 
         if (isAdmin) {
             return "/index";
-        } else if (isMechanic) {
-            return "/index-mecanico";
-        } else if (isExecutive) {
-            return "/index-ejecutivo";
         } else {
             throw new IllegalStateException();
         }

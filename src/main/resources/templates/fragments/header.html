@@ -1,0 +1,41 @@
+<!--Cabecera de la página, que muestra el menú en cada página-->
+
+<nav th:fragment="header" xmlns:th="http://www.w3.org/1999/xhtml"
+     xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4"
+     class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false"
+                    aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!--Lista que construye el menú superior-->
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li >
+                    <a href="/" class="glyphicon glyphicon-home"> Inicio</a>
+                </li>
+                <li >
+                    <a href="/herramientas" class="glyphicon glyphicon-wrench">Herramientas</a>
+                </li>
+                <li >
+                    <a href="/maquinarias" class="glyphicon glyphicon-tower">Maquinarias</a>
+                </li>
+                <li >
+                    <a href="/repuestos" class="glyphicon glyphicon-th-large">Repuestos</a>
+                </li>
+
+            </ul>
+            <form th:action="@{/logout}" method="post" style="float: right; padding-top: 6px">
+                <button type="submit" value="Cerrar sesión" class="btn btn-primary flex-item">
+                    <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> &nbsp;Cerrar sesión
+                </button>
+            </form>
+        </div>
+    </div>
+
+</nav>

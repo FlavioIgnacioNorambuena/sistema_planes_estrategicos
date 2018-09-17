@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<html lang="es" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<div th:replace="fragments/head :: head"></div>
+
+<title>Inicio</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 85%;
+        height: 10%;
+    }
+
+    .column {
+        float: left;
+        width: 33.3%;
+        padding: 10px;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    ul#menu li {
+        display:inline;
+        position: absolute;
+        left: 15%;
+        padding-right: 325px !important;
+    }
+
+</style>
+
+<body id="body-index">
+<div th:replace="fragments/header :: header"></div>
+<div class="container" id="container">
+    <div  class="row" id="row">
+
+        <div class="column" id="left">
+            <a href="/herramientas">
+                <img src="images/mt_tools.png" style="width:100%"
+                     onmouseout="this.src='images/mt_tools.png'"
+                     onmouseover="this.src='images/mt_tools_sel.png'">
+            </a>
+        </div>
+
+        <div class="column" id="center2">
+            <a href="/maquinarias">
+                <img src="images/mt_robot.png" style="width:100%"
+                     onmouseout="this.src='images/mt_robot.png'"
+                     onmouseover="this.src='images/mt_robot_sel.png'">
+            </a>
+        </div>
+
+        <div class="column" id="right">
+            <a href="/repuestos">
+                <img src="images/mt_replace.png" style="width:100%"
+                     onmouseout="this.src='images/mt_replace.png'"
+                     onmouseover="this.src='images/mt_replace_sel.png'">
+            </a>
+        </div>
+
+        <br>
+
+        <div class="col-md-offset-3">
+            <a href="/downloadAdminExcel">
+                <button type="button" class="btn btn-success btn-md" style="margin-bottom: 15px;">
+                    <h4> Descargar Reporte Excel
+                        <span class="glyphicon glyphicon-download btn-lg" aria-hidden="true"></span>
+                    </h4>
+                </button>
+            </a>
+
+            <a href="/downloadAdminPdf">
+                <button type="button" class="btn btn-danger btn-md color:red" style="margin-bottom: 15px;">
+                    <h4> Descargar Reporte PDF
+                        <span class="glyphicon glyphicon-download btn-lg" aria-hidden="true"></span>
+                    </h4>
+                </button>
+            </a>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</body>
+
+<div th:replace="fragments/footer :: footer"></div> <!--Carga el fragmento footer-->
+
+</html>

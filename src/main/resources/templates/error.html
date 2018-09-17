@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<div th:replace="fragments/head :: head"></div>
+
+<title>Inicio</title>
+
+<style>
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+
+<body id="body-index">
+<div th:replace="fragments/header :: header"></div>
+<div class="container" id="container">
+    <img src="images/errorGeneralized.png" align="middle" style="width:40%">
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</body>
+
+<div th:replace="fragments/footer :: footer"></div> <!--Carga el fragmento footer-->
+
+</html>

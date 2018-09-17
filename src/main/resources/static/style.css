@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+#container {
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.well-margin{
+    margin-top: 200px;
+    margin-bottom: 150px;
+}
+well-top{
+    margin-top: 150px;
+    margin-bottom: 75px;
+}
+
+well-sub{
+    margin-top: 75px;
+    margin-bottom: 150px;
+}
+
+.searchBar{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.flex-item{
+    flex-grow: 1;
+    margin: 2px;
+}
+
+.form-inline {
+ margin-top: 10px;
+}
+
+.searchBarItem{
+    flex-grow: 1;
+    margin: 2px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.searchBarButton{
+    max-width: 100px;
+    height: 34px;
+}
+
+post-button{
+    margin: 0 auto;
+}
+
+.action-button{
+    display: inline-flex;
+}
+
+fragment-hidden{
+    visibility: hidden;
+}
+
+.footer {
+    background-color: #b4b4b4;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+}
+
+.title-header{
+    font-family: 'Roboto Condensed', sans-serif;
+    display: inline;
+    margin-left: 5px;
+}
+
+#not-found{
+    padding-top: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#body-login{
+    background: #eee url(bg.png);
+    padding-top: 130px;}
+
+    #body-post{
+        background: #eee url(bg.png);
+    padding-top: 10px;}
+
+    #body-index{
+        background: #eee url(bg.png);
+    padding-top: 10px;}
+    #body-register{
+        background: #eee url(bg.png);
+    padding-top: 130px;}
+
+    #body-newPost{
+        background: #eee url(bg.png);
+    padding-top: 130px;}
+
+#body-admin{
+        background: #eee url(bg.png);
+    padding-top: 100px;}
+
+    .info-profile{
+        border: 2px solid rgb(0, 0, 0);
+        border-radius:250px;
+        margin-top: 20px;
+        box-shadow: 10px 10px 5px #aaaaaa;
+    }
+
+
+    .well{
+        -webkit-box-shadow: 1px 1px 10px 0px #000;
+        -moz-box-shadow: 1px 1px 10px 0px #000;
+        box-shadow: 1px 1px 10px 0px #000;
+    }
+
+.login-container{
+    position: relative;
+    /*width: 300px;*/
+    /*margin: 80px auto;*/
+    padding: 20px 40px 40px;
+    text-align: center;
+}
+
+.profile-container{
+    position: relative;
+    /*width: 1000px;*/
+    /*margin: 80px auto;*/
+    padding: 20px 40px 40px;
+    text-align: center;
+}
+
+.admin-container{
+    position: relative;
+    width: 800px;
+    margin: 80px auto;
+    padding: 20px 40px 40px;
+    text-align: center;
+
+}
+
+.register-container{
+    position: relative;
+   /* width: 700px;*/
+    margin: 80px auto;
+    padding: 20px 40px 40px;
+    text-align: center;
+}
+
+.general-container{
+    position: relative;
+    margin: 80px auto;
+    padding: 20px 40px 40px;
+    text-align: center;
+}
+
+#output{
+    position: absolute;
+    width: 300px;
+    top: -75px;
+    left: 0;
+    color: #fff;
+}
+
+#category-form{
+    text-align: center;
+}
+
+#user-form{
+    text-align: center;
+}
+
+#output.alert-success{
+    background: rgb(25, 204, 25);
+}
+
+#output.alert-danger{
+    background: rgb(228, 105, 105);
+}
+
+
+
+
+textarea {
+    min-width:100%;
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 100px;
+}
+
+
+
+.avatar{
+    width: 100px;height: 100px;
+    margin: 10px auto 30px;
+    border-radius: 100%;
+    border: 2px solid #aaa;
+    background-size: cover;
+}
+
+.profile-avatar{
+    object-position: right;
+    width: 100%;
+    height: 100%;
+    margin: 10px auto 30px;
+    border-radius: 5%;
+    border: 2px solid #aaa;
+    background-size: cover;
+
+}
+
+.form-box input{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    height:40px;
+    border: 1px solid #ccc;;
+    background: #fafafa;
+    transition:0.2s ease-in-out;
+
+}
+
+.form-box input:focus{
+    outline: 0;
+    background: #eee;
+}
+
+.form-box input[type="text"]{
+    border-radius: 5px 5px 5px 5px;
+    text-transform: lowercase;
+}
+
+.form-box input[type="password"]{
+    border-radius: 5px 5px 5px 5px;
+    border-top: 0;
+}
+
+.form-box button.login{
+    margin-top:15px;
+    padding: 10px 20px;
+}
+
+.form-box button.register{
+    margin-top:10px;
+    padding: 10px 20px;
+    
+}
+
+.form-box button.enviar{
+    margin-top:10px;
+    padding: 10px 20px;
+    
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+.profile-format{
+    text-align: left;
+}
+
+
+#comments {
+    padding: 0;
+    margin: 5px;
+}
+#comments li { float: left; padding: 10px 0 0; }
+.comment {  padding: 10px; display: block; overflow: hidden; width: 100%;}
+.comment-author { font-size: 10px; margin: 0 10px 10px 0; }
+.comment-body, .comment-body p { font-size: 12px; line-height: 18px; margin: 0; }
+
+.select{
+    margin-top: 2px;
+    height: 34px;
+}
+.modalAdjust{
+    top: 20%;
+}
