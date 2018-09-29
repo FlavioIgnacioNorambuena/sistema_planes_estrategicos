@@ -1,10 +1,4 @@
-var filter = {
-    "content":"/posts/body/",
-    "title":"/posts/title/",
-    "author":"/posts/author/",
-    "date": "/posts/date/",
-    "range":"/posts/date/"
-};
+
 
 function hideAndShow() {
     let selected = $("#select").val();
